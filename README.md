@@ -12,4 +12,4 @@
 - CORS -install cors in backend and  add the middleware to the app with configurations : origin , credentials : true 
 - Whenever making an API call pass axios => {with credentials: true}
 - Redux Toolkit and React Redux 
--
+- created userSlice and and setup appStore
