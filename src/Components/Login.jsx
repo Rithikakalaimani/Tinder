@@ -1,10 +1,21 @@
 import React, { useState } from 'react'
-
+import axios from 'axios'
 const Login = () => {
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
   const handleLogin = async ()=>{
-
+    try{
+      const response = await axios.post('http://localhost:3001/login',{
+      email,
+      password
+     },
+    {withCredentials:true});
+    }
+    catch(err)
+    {
+      console.log(err);
+    }
+     
   }
 
   return (
@@ -37,7 +48,7 @@ const Login = () => {
                 className='input input-bordered w-full max-w-xs'
               />
             </label>
-              <button className='btn btn-primary m-5'>Login</button>
+              <button className='btn btn-primary m-5' onClick={handleLogin}>Login</button>
           </div>
         </div>
       </div>

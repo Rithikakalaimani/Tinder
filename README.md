@@ -8,4 +8,8 @@
 - installed react-router-dom
 - Router - children routes - Outlet
 - Footer Component 
-- 
+- install axios 
+- CORS -install cors in backend and  add the middleware to the app with configurations : origin , credentials : true 
+- Whenever making an API call pass axios => {with credentials: true}
+- Redux Toolkit and React Redux 
+-
