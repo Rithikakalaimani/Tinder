@@ -3,3 +3,9 @@
 - remove unnecessary code 
 - tailwind installed and configured
 - installed daisy UI 
+- added navbar
+- Navbar component
+- installed react-router-dom
+- Router - children routes - Outlet
+- Footer Component 
+- 
